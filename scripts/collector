@@ -1,34 +1,32 @@
-import sys
-import os
+import sqlite3
 from filesmeta.common_minion import CommonMinion
 from filesmeta.doc_minion import DocMinion
 from filesmeta.gru import Gru
 from filesmeta.img_minion import ImgMinion
 from filesmeta.pdf_minion import PDFMinion
-from staff.collector import Collector
+from staff.collector import Collector as OldCollector
 
-def process_and_create_database(directory):
-    c = Collector(directory)
+class Collector(OldCollector):
+    def save_to_sqlite(self, data_info):
+        connection = sqlite3.connect(self.sqlite_path)
+        cursor = connection.cursor()
 
-    g = Gru()
-    m1 = ImgMinion()
-    m2 = PDFMinion()
-    m3 = DocMinion()
-    m4 = CommonMinion()
-    g.add_minion(m1)
-    g.add_minion(m2)
-    g.add_minion(m3)
-    g.add_minion(m4)
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS files (
+                name TEXT,
+                size INTEGER,
+                path TEXT,
+                creation_date TEXT,
+                modification_date TEXT,
+                PRIMARY KEY (path)
+            )
+        ''')
 
-    file_paths = c.get_path()
-    metadata = g.process_files(file_paths)
+        cursor.executemany('''
+            INSERT OR REPLACE INTO files
+            (name, size, path, creation_date, modification_date)
+            VALUES (?, ?, ?, ?, ?)
+        ''', data_info)
 
-    c.make_database(metadata)
-
-def main():
-    directory = "/Users/ekaterinabondarenko"
-    process_and_create_database(directory)
-
-if __name__ == "__main__":
-    main()
-
+        connection.commit()
+        connection.close()
