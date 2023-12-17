@@ -1,4 +1,12 @@
-from utils import files
+#from utils import files
+import sys
+
+from filesmeta.common_minion import CommonMinion
+from filesmeta.doc_minion import DocMinion
+from filesmeta.gru import Gru
+from filesmeta.img_minion import ImgMinion
+from filesmeta.pdf_minion import PDFMinion
+from collector import Collector
 
 if __name__ == "__main__":
     directory = "/Users/ekaterinabondarenko"
