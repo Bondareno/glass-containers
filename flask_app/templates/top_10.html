@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статистика ТОП-10 по размеру</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .dropdown {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .dropdown button {
+      background-color: #555;
+      color: #fff;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #555;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <button>Меню СТАКАНа</button>
+    <div class="dropdown-content">
+      <a href="/">Главная</a>
+      <a href="/ext_stat">Статистика по расширениям</a>
+    </div>
+  </div>
+  <div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Статистика ТОП-10 по размеру</h1>
+    <table>
+      <tr>
+        <th>Размер файла</th>
+      </tr>
+      {% for row in value1 %}
+      <tr>
+        <td>{{ row }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</body>
+</html>
