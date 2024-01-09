@@ -16,7 +16,7 @@ gru.add_minion(img_minion)
 gru.add_minion(pdf_minion)
 gru.add_minion(doc_minion)
 
-file_paths = [...]  # Список путей к файлам, которые вы хотите обработать
-metadata = [gru.get_meta_info(file_path) for file_path in file_paths]
+metadata = [gru.gru_get_meta_inf(file_path) for file_path in file_paths]
+
 
 # Теперь у вас есть метаинформация о каждом файле, которую вы можете использовать для создания CSV-файла или других операций.
