@@ -1,12 +1,12 @@
 class Gru:
     def __init__(self):
-        self._minions = []
+        self.minions = []
 
     def add_minion(self, minion):
-        self._minions.append(minion)
+        self.minions.append(minion)
 
-    def get_meta_info(self, path):
+    def gru_get_meta_inf(self, path):
         metadata = {}
-        for minion in self._minions:
+        for minion in self.minions:
             metadata.update(minion.get_meta_info(path))
         return metadata
