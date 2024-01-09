@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 5px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, p {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>STAKAN Main Page</h1>
+  </header>
+  <nav>
+    <a href="/ext_stat">Статистика по расширениям</a>
+    <a href="/top_10_by_size">Статистика ТОП-10 по размеру</a>
+  </nav>
+  <div class="container">
+    <p>Дата обновления базы: {{ value1 }}</p>
+    <p>Число файлов в базе: {{ value2 }}</p>
+  </div>
+</body>
+</html>
