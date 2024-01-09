@@ -1,30 +1,40 @@
-import os
-import time
+import sqlite3
+from os.path import getmtime
+from datetime import datetime
+from time import time
 
-def get_top_10_extensions(path):
-    start_time = time.time()
-    ext_dictionary = dict()
-    ext_dictionary['NoExtension'] = 0
+class DatabaseManager:
+    def __init__(self, db_path):
+        self.db_path = db_path
+        self.last_update_time = None
+        self.top_ten_extensions = None
 
-    for root, _, files in os.walk(path):
-        for filename in files:
-            file_path = os.path.join(root, filename)
-            ext = os.path.splitext(filename)[-1].lower()
-            if not ext:
-                ext = 'NoExtension'
-            ext_dictionary[ext] = ext_dictionary.get(ext, 0) + 1
+    def update_data(self):
+        connection = sqlite3.connect(self.db_path)
+        cursor = connection.cursor()
 
-    top_10_extensions_list = sorted(ext_dictionary.items(), key=lambda x: x[1], reverse=True)[:10]
+        cursor.execute("""
+            SELECT extension, COUNT(*) as n
+            FROM index_files
+            GROUP BY extension
+            ORDER BY n DESC
+            LIMIT 10
+        """)
 
-    for i, (extension, count) in enumerate(top_10_extensions_list, start=1):
-        print(f"{i}. Extension: {extension}, Count: {count}")
+        self.top_ten_extensions = cursor.fetchall()
+        self.last_update_time = time()
 
-    end_time = time.time()
-    elapsed_time = end_time - start_time
+        connection.close()
 
-    return elapsed_time
+    def list_top_ten_extensions_n(self):
+        current_time = time()
+        if self.last_update_time is None or current_time - self.last_update_time >= 2 * 24 * 3600:
+            print("Database on files should be updated!")
+            self.update_data()
 
-if __name__ == "__main__":
-    root_path = os.path.abspath(os.sep)
-    elapsed_time = get_top_10_extensions(root_path)
-    print(f"Program execution time: {elapsed_time:.2f} seconds")
+        return self.top_ten_extensions
+
+if __name__ == '__main__':
+    db_manager = DatabaseManager("data/index.sqlite")
+    top_extensions = db_manager.list_top_ten_extensions_n()
+    print(top_extensions)
