@@ -1,324 +1,365 @@
-<mxfile host="app.diagrams.net" modified="2024-02-08T16:38:04.515Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="u9zj4eO0QZlXs89p3l2-" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-08T19:15:58.826Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="ioJ1rSaKj7vylmAjua5L" version="23.0.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="984" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2426" dy="1055" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="vM8lzAU44UQYUOcprj-G-51" value="Виды нарушений (ViolationType)&#xa;" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
-          <mxGeometry x="41.25" y="240" width="262.5" height="140" as="geometry" />
+          <mxGeometry x="-170" y="300" width="380" height="140" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-52" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="vM8lzAU44UQYUOcprj-G-51" vertex="1">
-          <mxGeometry y="30" width="262.5" height="30" as="geometry" />
+          <mxGeometry y="30" width="380" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-53" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="vM8lzAU44UQYUOcprj-G-52" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-54" value="ID вида нарушения (ViolationTypeID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-52" vertex="1">
-          <mxGeometry x="30" width="232.5" height="30" as="geometry">
-            <mxRectangle width="232.5" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-54" value="ID вида нарушения (ViolationTypeID) int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-52" vertex="1">
+          <mxGeometry x="30" width="350" height="30" as="geometry">
+            <mxRectangle width="350" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-55" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-51" vertex="1">
-          <mxGeometry y="60" width="262.5" height="30" as="geometry" />
+          <mxGeometry y="60" width="380" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-56" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-55" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-57" value="Название (TypeName)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-55" vertex="1">
-          <mxGeometry x="30" width="232.5" height="30" as="geometry">
-            <mxRectangle width="232.5" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-57" value="Название (TypeName) char NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-55" vertex="1">
+          <mxGeometry x="30" width="350" height="30" as="geometry">
+            <mxRectangle width="350" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-58" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-51" vertex="1">
-          <mxGeometry y="90" width="262.5" height="50" as="geometry" />
+          <mxGeometry y="90" width="380" height="50" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-59" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-58" vertex="1">
           <mxGeometry width="30" height="50" as="geometry">
             <mxRectangle width="30" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-60" value="Размер штрафа (FineAmount)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-58" vertex="1">
-          <mxGeometry x="30" width="232.5" height="50" as="geometry">
-            <mxRectangle width="232.5" height="50" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-61" value="Факты нарушений (Violation)&#xa;" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
-          <mxGeometry x="47.5" y="20" width="250" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-62" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
-          <mxGeometry y="30" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-63" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="vM8lzAU44UQYUOcprj-G-62" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-64" value="ID нарушения (ViolationID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-62" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry">
-            <mxRectangle width="220" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-65" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
-          <mxGeometry y="60" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-66" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-65" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-67" value="ID автомобиля (CarID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-65" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry">
-            <mxRectangle width="220" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-68" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
-          <mxGeometry y="90" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-69" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-68" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-70" value="ID вида нарушения (ViolationTypeID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-68" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry">
-            <mxRectangle width="220" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-97" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
-          <mxGeometry y="120" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-98" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-97" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-99" value="ID водителя (DriverID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-97" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry">
-            <mxRectangle width="220" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-100" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
-          <mxGeometry y="150" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-101" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-100" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-102" value="Дата нарушения (ViolationDate)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-100" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry">
-            <mxRectangle width="220" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-60" value="Размер штрафа (FineAmount) money NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-58" vertex="1">
+          <mxGeometry x="30" width="350" height="50" as="geometry">
+            <mxRectangle width="350" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-71" value="&#xa;Автомобили (Car)" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
-          <mxGeometry x="850" y="20" width="260" height="210" as="geometry">
+          <mxGeometry x="301" y="40" width="340" height="250" as="geometry">
             <mxRectangle x="120" y="120" width="150" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-72" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="vM8lzAU44UQYUOcprj-G-71" vertex="1">
-          <mxGeometry y="30" width="260" height="30" as="geometry" />
+          <mxGeometry y="30" width="340" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-73" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="vM8lzAU44UQYUOcprj-G-72" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-74" value="ID автомобиля (CarID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-72" vertex="1">
-          <mxGeometry x="30" width="230" height="30" as="geometry">
-            <mxRectangle width="230" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-74" value="ID автомобиля (CarID) int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-72" vertex="1">
+          <mxGeometry x="30" width="310" height="30" as="geometry">
+            <mxRectangle width="310" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-116" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-71" vertex="1">
-          <mxGeometry y="60" width="260" height="30" as="geometry" />
+          <mxGeometry y="60" width="340" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-117" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-116" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-118" value="Госномер (LicensePlate)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-116" vertex="1">
-          <mxGeometry x="30" width="230" height="30" as="geometry">
-            <mxRectangle width="230" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-118" value="Госномер (LicensePlate) char NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-116" vertex="1">
+          <mxGeometry x="30" width="310" height="30" as="geometry">
+            <mxRectangle width="310" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-75" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-71" vertex="1">
-          <mxGeometry y="90" width="260" height="30" as="geometry" />
+          <mxGeometry y="90" width="340" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-76" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-75" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
+          <mxGeometry width="30" height="40" as="geometry">
+            <mxRectangle width="30" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-77" value="Модель (Model)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-75" vertex="1">
-          <mxGeometry x="30" width="230" height="30" as="geometry">
-            <mxRectangle width="230" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-77" value="Модель (Model) char NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-75" vertex="1">
+          <mxGeometry x="30" width="310" height="40" as="geometry">
+            <mxRectangle width="310" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-78" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-71" vertex="1">
-          <mxGeometry y="120" width="260" height="20" as="geometry" />
+          <mxGeometry y="130" width="340" height="20" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-79" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-78" vertex="1">
           <mxGeometry width="30" height="20" as="geometry">
             <mxRectangle width="30" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-80" value="Год выпуска (Year)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-78" vertex="1">
-          <mxGeometry x="30" width="230" height="20" as="geometry">
-            <mxRectangle width="230" height="20" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-80" value="Год выпуска (Year) year NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-78" vertex="1">
+          <mxGeometry x="30" width="310" height="20" as="geometry">
+            <mxRectangle width="310" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-81" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-71" vertex="1">
-          <mxGeometry y="140" width="260" height="40" as="geometry" />
+          <mxGeometry y="150" width="340" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-82" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-81" vertex="1">
           <mxGeometry width="30" height="40" as="geometry">
             <mxRectangle width="30" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-83" value="ID владельца (OwnerID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-81" vertex="1">
-          <mxGeometry x="30" width="230" height="40" as="geometry">
-            <mxRectangle width="230" height="40" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-83" value="ID владельца (OwnerID) int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-81" vertex="1">
+          <mxGeometry x="30" width="310" height="40" as="geometry">
+            <mxRectangle width="310" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-120" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-71" vertex="1">
-          <mxGeometry y="180" width="260" height="30" as="geometry" />
+          <mxGeometry y="190" width="340" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-121" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-120" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-122" value="ID водителя (DriverID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-120" vertex="1">
-          <mxGeometry x="30" width="230" height="30" as="geometry">
-            <mxRectangle width="230" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-122" value="ID водителя (DriverID) int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-120" vertex="1">
+          <mxGeometry x="30" width="310" height="30" as="geometry">
+            <mxRectangle width="310" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-40" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="vM8lzAU44UQYUOcprj-G-71">
+          <mxGeometry y="220" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-41" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-40">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-42" value="ID страховки (InsuranceID) int" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-40">
+          <mxGeometry x="30" width="310" height="30" as="geometry">
+            <mxRectangle width="310" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-87" value="Водители (Driver)" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
-          <mxGeometry x="455" y="310" width="320" height="160" as="geometry" />
+          <mxGeometry x="730" y="300" width="410" height="170" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-88" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="vM8lzAU44UQYUOcprj-G-87" vertex="1">
-          <mxGeometry y="30" width="320" height="40" as="geometry" />
+          <mxGeometry y="30" width="410" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-89" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="vM8lzAU44UQYUOcprj-G-88" vertex="1">
           <mxGeometry width="30" height="40" as="geometry">
             <mxRectangle width="30" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-90" value="ID водителя (DriverID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-88" vertex="1">
-          <mxGeometry x="30" width="290" height="40" as="geometry">
-            <mxRectangle width="290" height="40" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-90" value="ID водителя (DriverID)int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-88" vertex="1">
+          <mxGeometry x="30" width="380" height="40" as="geometry">
+            <mxRectangle width="380" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-91" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-87" vertex="1">
-          <mxGeometry y="70" width="320" height="30" as="geometry" />
+          <mxGeometry y="70" width="410" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-92" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-91" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-93" value="Право управления (DrivingLicense)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-91" vertex="1">
-          <mxGeometry x="30" width="290" height="30" as="geometry">
-            <mxRectangle width="290" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-93" value="Право управления (DrivingLicense) char NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-91" vertex="1">
+          <mxGeometry x="30" width="380" height="30" as="geometry">
+            <mxRectangle width="380" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-113" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-87" vertex="1">
-          <mxGeometry y="100" width="320" height="30" as="geometry" />
+          <mxGeometry y="100" width="410" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-114" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-113" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-115" value="ФИО водителя (DriverName)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-113" vertex="1">
-          <mxGeometry x="30" width="290" height="30" as="geometry">
-            <mxRectangle width="290" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-115" value="ФИО водителя (DriverName) char NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-113" vertex="1">
+          <mxGeometry x="30" width="380" height="30" as="geometry">
+            <mxRectangle width="380" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-126" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-87" vertex="1">
-          <mxGeometry y="130" width="320" height="30" as="geometry" />
+          <mxGeometry y="130" width="410" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-127" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-126" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-128" value="Данные паспорта водителя (DriverPassportData)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-126" vertex="1">
-          <mxGeometry x="30" width="290" height="30" as="geometry">
-            <mxRectangle width="290" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-128" value="Данные паспорта водителя (DriverPassportData) char NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-126" vertex="1">
+          <mxGeometry x="30" width="380" height="30" as="geometry">
+            <mxRectangle width="380" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-129" value="Владельцы(Owner)" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
-          <mxGeometry x="445" y="130" width="330" height="140" as="geometry" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-129" value="Владельцы (Owner)" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="730" y="520" width="420" height="150" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-130" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="vM8lzAU44UQYUOcprj-G-129" vertex="1">
-          <mxGeometry y="30" width="330" height="40" as="geometry" />
+          <mxGeometry y="30" width="420" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-131" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="vM8lzAU44UQYUOcprj-G-130" vertex="1">
           <mxGeometry width="30" height="40" as="geometry">
             <mxRectangle width="30" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-132" value="ID владельца (OwnerID)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-130" vertex="1">
-          <mxGeometry x="30" width="300" height="40" as="geometry">
-            <mxRectangle width="300" height="40" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-132" value="ID владельца (OwnerID) int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-130" vertex="1">
+          <mxGeometry x="30" width="390" height="40" as="geometry">
+            <mxRectangle width="390" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-136" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-129" vertex="1">
-          <mxGeometry y="70" width="330" height="40" as="geometry" />
+          <mxGeometry y="70" width="420" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-137" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-136" vertex="1">
           <mxGeometry width="30" height="40" as="geometry">
             <mxRectangle width="30" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-138" value="Данные владельца(OwnerData)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-136" vertex="1">
-          <mxGeometry x="30" width="300" height="40" as="geometry">
-            <mxRectangle width="300" height="40" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-138" value="Данные владельца(OwnerData) char NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-136" vertex="1">
+          <mxGeometry x="30" width="390" height="40" as="geometry">
+            <mxRectangle width="390" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-139" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-129" vertex="1">
-          <mxGeometry y="110" width="330" height="30" as="geometry" />
+          <mxGeometry y="110" width="420" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vM8lzAU44UQYUOcprj-G-140" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-139" vertex="1">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vM8lzAU44UQYUOcprj-G-141" value="Данные паспорта владельца (OwnerPassportData)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-139" vertex="1">
-          <mxGeometry x="30" width="300" height="30" as="geometry">
-            <mxRectangle width="300" height="30" as="alternateBounds" />
+        <mxCell id="vM8lzAU44UQYUOcprj-G-141" value="Данные паспорта владельца (OwnerPassportData) char NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-139" vertex="1">
+          <mxGeometry x="30" width="390" height="30" as="geometry">
+            <mxRectangle width="390" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Nodh2UWmrRqa2c76pkL2-1" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vM8lzAU44UQYUOcprj-G-65" target="vM8lzAU44UQYUOcprj-G-72">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="450" y="400" as="sourcePoint" />
-            <mxPoint x="550" y="300" as="targetPoint" />
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-30" value="Страховка (Insurance)" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="40" width="360" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-31" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-30">
+          <mxGeometry y="30" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-32" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-31">
+          <mxGeometry width="30" height="40" as="geometry">
+            <mxRectangle width="30" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Nodh2UWmrRqa2c76pkL2-19" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vM8lzAU44UQYUOcprj-G-88" target="vM8lzAU44UQYUOcprj-G-120">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="710" y="390" as="sourcePoint" />
-            <mxPoint x="810" y="290" as="targetPoint" />
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-33" value="ID страховки (InsuranceID) int " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-31">
+          <mxGeometry x="30" width="330" height="40" as="geometry">
+            <mxRectangle width="330" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Nodh2UWmrRqa2c76pkL2-23" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;exitX=1.007;exitY=0.689;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="vM8lzAU44UQYUOcprj-G-88">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="297.5" y="160.67000000000002" as="sourcePoint" />
-            <mxPoint x="398.25" y="535" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="390" y="470" />
-            </Array>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-34" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-30">
+          <mxGeometry y="70" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-35" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-34">
+          <mxGeometry width="30" height="40" as="geometry">
+            <mxRectangle width="30" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Nodh2UWmrRqa2c76pkL2-24" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vM8lzAU44UQYUOcprj-G-130">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="750" y="280" as="sourcePoint" />
-            <mxPoint x="850" y="180" as="targetPoint" />
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-36" value="ID владельца (OwnerID) int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-34">
+          <mxGeometry x="30" width="330" height="40" as="geometry">
+            <mxRectangle width="330" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-37" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-30">
+          <mxGeometry y="110" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-38" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-37">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-39" value="ID водителя (DriverID)int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-37">
+          <mxGeometry x="30" width="330" height="30" as="geometry">
+            <mxRectangle width="330" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-51" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-30">
+          <mxGeometry y="140" width="360" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-52" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-51">
+          <mxGeometry width="30" height="20" as="geometry">
+            <mxRectangle width="30" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nodh2UWmrRqa2c76pkL2-53" value="Номер страховки (NumberInsurance) char NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="Nodh2UWmrRqa2c76pkL2-51">
+          <mxGeometry x="30" width="330" height="20" as="geometry">
+            <mxRectangle width="330" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-61" value="Факты нарушений (Violation)&#xa;" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="-170" y="40" width="370" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-62" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
+          <mxGeometry y="30" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-63" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="vM8lzAU44UQYUOcprj-G-62" vertex="1">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-64" value="ID нарушения (ViolationID) int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="vM8lzAU44UQYUOcprj-G-62" vertex="1">
+          <mxGeometry x="30" width="340" height="30" as="geometry">
+            <mxRectangle width="340" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-65" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
+          <mxGeometry y="60" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-66" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-65" vertex="1">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-67" value="ID автомобиля (CarID) int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-65" vertex="1">
+          <mxGeometry x="30" width="340" height="30" as="geometry">
+            <mxRectangle width="340" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-68" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
+          <mxGeometry y="90" width="370" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-69" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-68" vertex="1">
+          <mxGeometry width="30" height="20" as="geometry">
+            <mxRectangle width="30" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-70" value="ID вида нарушения (ViolationTypeID) int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-68" vertex="1">
+          <mxGeometry x="30" width="340" height="20" as="geometry">
+            <mxRectangle width="340" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-97" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
+          <mxGeometry y="110" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-98" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-97" vertex="1">
+          <mxGeometry width="30" height="40" as="geometry">
+            <mxRectangle width="30" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-99" value="ID водителя (DriverID) int " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-97" vertex="1">
+          <mxGeometry x="30" width="340" height="40" as="geometry">
+            <mxRectangle width="340" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-100" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="vM8lzAU44UQYUOcprj-G-61" vertex="1">
+          <mxGeometry y="150" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-101" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="vM8lzAU44UQYUOcprj-G-100" vertex="1">
+          <mxGeometry width="30" height="40" as="geometry">
+            <mxRectangle width="30" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vM8lzAU44UQYUOcprj-G-102" value="Дата нарушения (ViolationDate) timestamp NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="vM8lzAU44UQYUOcprj-G-100" vertex="1">
+          <mxGeometry x="30" width="340" height="40" as="geometry">
+            <mxRectangle width="340" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
       </root>
